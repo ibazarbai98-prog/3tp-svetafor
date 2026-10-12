@@ -1,0 +1,68 @@
+body{
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.container{
+    display: flex;
+    gap: 100px;
+}
+.cvet-sfetafora{
+    background: #333;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cvet{
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.red{
+    animation: red 6s infinite;
+}
+.yellow{
+    animation: yellow 6s infinite;
+}
+.green{
+    animation: green 6s infinite;
+}
+@keyframes red{
+    0%, 33%{
+        background: red;
+    }
+    34%, 100%{
+        background: black;
+    }
+}
+@keyframes yellow {
+    0%, 33%{
+        background: black;
+    }
+    34%, 50%{
+        background: yellow;
+    }
+    51%, 100%{
+        background: black;
+    }
+}
+@keyframes green{
+    0%, 50%{
+        background: black;
+    }
+    51%, 83%{
+        background: lime;
+    }
+    84%, 100%{
+        background: black;
+    }
+}
+.second .cvet{
+    animation-delay: -2s;
+}
+.third .cvet{
+    animation-delay: -4s;
+}
